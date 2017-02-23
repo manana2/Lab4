@@ -1,0 +1,22 @@
+html>
+<head>
+<title>lab4-3vote</title>
+<body>
+<script language="Javascript">
+var sum = 0;
+function vote(a, b, c) {
+sum = a + b + c; 
+if(sum >= 2){
+return 1;
+} else {
+return 0;
+}
+}
+
+var a = 1; var b = 0, c = 1;
+output = vote(a,b,c);
+document.write("vote result: ",output);
+
+</script>
+</body>
+</html>

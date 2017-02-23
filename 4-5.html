@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Meiyr</title>
+<body>
+<script language="Javascript">
+function countOccurences(input) {
+    var dict = {};
+    for (var i = 0; i < input.length; i++) {
+    	var letter = input.charAt(i);
+    	if (dict[letter]) {
+    		dict[letter]++;
+    	}
+    	else {
+    		dict[letter] = 1;
+    	}
+   	}
+   	return dict;
+}
+var s = countOccurences("Mkgvjnememf");
+var output = '';
+for (var property in s) {
+	output += property + ': ' + s[property] + "<br\>";
+}
+document.write(output);
+</script>
+</body>
+</html>

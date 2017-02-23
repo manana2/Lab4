@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>lab4-1</title>
+<body>
+<script language="Javascript">
+var minimum;
+function fmin(a, b, c, d) {
+if ((a < b) && (c < d) && (a < d)) {
+minimum = a;
+} else if ((b < a) && (b < c) && (b < d)){
+minimum = b;
+} else if ((c < a) && (c < b) && (c < d)){
+minimum = c;
+} else {
+minimum = d;
+}
+return minimum;
+}
+
+var a = 5; var b = 6; var c = 13; var d = -6;
+
+document.write("Min result: ", fmin(a,b,c,d));
+
+
+</script>
+</body>
+</html>
